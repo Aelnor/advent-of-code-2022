@@ -59,8 +59,8 @@ fn main() {
             for i in 1..number_of_knots {
                 let head = knots[i - 1].clone();
                 move_tail(&head, &mut knots[i]);
-                visited.insert(knots[number_of_knots - 1].clone());
             }
+            visited.insert(knots[number_of_knots - 1].clone());
         }
     }
     println!("visited: {}", visited.len());
